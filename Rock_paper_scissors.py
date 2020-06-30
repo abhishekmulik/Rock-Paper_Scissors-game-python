@@ -15,7 +15,7 @@ def gameplay():
     if actUser==comp_act():
         result='Its a Tie'
         return result
-    elif actUser=='P' and comp_act()=='R' or actUser=='S' and comp_act()=='P' or actUser=='R'and comp_act()=='S':
+    elif (actUser=='R' and comp_act()=='P') or (actUser=='P' and comp_act()=='S') or (actUser=='S'and comp_act()=='R'):
         comp+=1
         result='Computer wins!!!'
     elif actUser not in ['P',"S",'R','Exit']:
